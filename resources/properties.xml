@@ -15,7 +15,7 @@
   <property id="userSensorSpeed" type="boolean">true</property>
   <property id="userSensorHeading" type="boolean">true</property>
   <property id="userSensorPressure" type="boolean">true</property>
-  <property id="userSensorAcceleration" type="boolean">true</property>
+  <property id="userSensorAcceleration" type="boolean">false</property>
   <property id="userSensorAcceleration_HD" type="boolean">true</property>
   <property id="userSensorMagnetometer" type="boolean">true</property>
   <property id="userSensorHeartrate" type="boolean">true</property>

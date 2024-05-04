@@ -48,8 +48,8 @@ class RL_Settings {
   public var bSensorAcceleration_HD as Boolean = true;
   public var bSensorMagnetometer as Boolean = true;
   public var bSensorHeartrate as Boolean = true;
-  public var bSensorCadence as Boolean = false;
-  public var bSensorPower as Boolean = false;
+  public var bSensorCadence as Boolean = true;
+  public var bSensorPower as Boolean = true;
   public var bSensorTemperature as Boolean = true;
   // ... activity
   public var bActivityLocation as Boolean = true;
