@@ -211,7 +211,7 @@ class RL_App extends App.AppBase {
   function getInitialView() {
     //Sys.println("DEBUG: RL_App.getInitialView()");
 
-    return [new RL_View(), new RL_ViewDelegate()] as Array<Ui.Views or Ui.InputDelegates>;
+    return [new RL_View(), new RL_ViewDelegate()];
   }
 
   function onSettingsChanged() {
