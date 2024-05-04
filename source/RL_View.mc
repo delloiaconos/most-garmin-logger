@@ -69,7 +69,6 @@ class RL_View extends Ui.View {
   private var iValue2Y as Number = 0;
   private var iValue3Y as Number = 0;
 
-
   //
   // FUNCTIONS: Ui.View (override/implement)
   //
@@ -618,6 +617,7 @@ class RL_View extends Ui.View {
 }
 
 class RL_ViewDelegate extends Ui.BehaviorDelegate {
+  hidden static var clickCounter as Number = 0; 
 
   //
   // FUNCTIONS: Ui.BehaviorDelegate (override/implement)
@@ -642,6 +642,7 @@ class RL_ViewDelegate extends Ui.BehaviorDelegate {
 
   function onSelect() {
     //Sys.println("DEBUG: RL_ViewDelegate.onSelect()");
+    self.clickCounter = 0;
     if($.RL_oActivitySession == null) {
       (App.getApp() as RL_App).initActivity();
       ($.RL_oActivitySession as ActivityRecording.Session).start();
@@ -650,11 +651,8 @@ class RL_ViewDelegate extends Ui.BehaviorDelegate {
       }
     }
     else {
-      ($.RL_oActivitySession as ActivityRecording.Session).stop();
-      ($.RL_oActivitySession as ActivityRecording.Session).save();
-      (App.getApp() as RL_App).resetActivity();
       if(Attention has :playTone) {
-        Attention.playTone(Attention.TONE_STOP);
+        Attention.playTone(Attention.TONE_START);
       }
     }
     return true;
@@ -663,6 +661,17 @@ class RL_ViewDelegate extends Ui.BehaviorDelegate {
   function onBack() {
     //Sys.println("DEBUG: RL_ViewDelegate.onBack()");
     if($.RL_oActivitySession != null) {
+      if( self.clickCounter >= 3 ) {
+        self.clickCounter = 0;
+        ($.RL_oActivitySession as ActivityRecording.Session).stop();
+        ($.RL_oActivitySession as ActivityRecording.Session).save();
+        (App.getApp() as RL_App).resetActivity();
+        if(Attention has :playTone) {
+          Attention.playTone(Attention.TONE_STOP);
+        }
+      } else {
+        self.clickCounter = self.clickCounter + 1;
+      }
       ($.RL_oActivitySession as ActivityRecording.Session).addLap();
       if(Attention has :playTone) {
         Attention.playTone(Attention.TONE_LAP);
