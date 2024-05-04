@@ -31,37 +31,36 @@ class RL_Settings {
 
   // Inputs
   // ... system
-  public var bSystemBattery as Boolean = false;
-  public var bSystemMemory as Boolean = false;
+  public var bSystemBattery as Boolean = true;
+  public var bSystemMemory as Boolean = true;
   // ... position
-  public var bPositionLocation as Boolean = false;
-  public var bPositionAltitude as Boolean = false;
-  public var bPositionSpeed as Boolean = false;
-  public var bPositionHeading as Boolean = false;
-  public var bPositionAccuracy as Boolean = false;
+  public var bPositionLocation as Boolean = true;
+  public var bPositionAltitude as Boolean = true;
+  public var bPositionSpeed as Boolean = true;
+  public var bPositionHeading as Boolean = true;
+  public var bPositionAccuracy as Boolean = true;
   // ... sensor
-  public var bSensorAltitude as Boolean = false;
-  public var bSensorSpeed as Boolean = false;
-  public var bSensorHeading as Boolean = false;
-  public var bSensorPressure as Boolean = false;
-  public var bSensorAcceleration as Boolean = false;
-  public var bSensorAcceleration_HD as Boolean = false;
-  public var bSensorMagnetometer as Boolean = false;
-  public var bSensorHeartrate as Boolean = false;
+  public var bSensorAltitude as Boolean = true;
+  public var bSensorSpeed as Boolean = true;
+  public var bSensorHeading as Boolean = true;
+  public var bSensorPressure as Boolean = true;
+  public var bSensorAcceleration as Boolean = true;
+  public var bSensorAcceleration_HD as Boolean = true;
+  public var bSensorMagnetometer as Boolean = true;
+  public var bSensorHeartrate as Boolean = true;
   public var bSensorCadence as Boolean = false;
   public var bSensorPower as Boolean = false;
-  public var bSensorTemperature as Boolean = false;
+  public var bSensorTemperature as Boolean = true;
   // ... activity
-  public var bActivityLocation as Boolean = false;
-  public var bActivityAltitude as Boolean = false;
-  public var bActivitySpeed as Boolean = false;
-  public var bActivityHeading as Boolean = false;
-  public var bActivityAccuracy as Boolean = false;
-  public var bActivityPressure as Boolean = false;
-  public var bActivityHeartrate as Boolean = false;
+  public var bActivityLocation as Boolean = true;
+  public var bActivityAltitude as Boolean = true;
+  public var bActivitySpeed as Boolean = true;
+  public var bActivityHeading as Boolean = true;
+  public var bActivityAccuracy as Boolean = true;
+  public var bActivityPressure as Boolean = true;
+  public var bActivityHeartrate as Boolean = true;
   public var bActivityCadence as Boolean = false;
   public var bActivityPower as Boolean = false;
-
 
   //
   // FUNCTIONS: self
