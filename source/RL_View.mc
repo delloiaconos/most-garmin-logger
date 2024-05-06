@@ -672,10 +672,6 @@ class RL_ViewDelegate extends Ui.BehaviorDelegate {
       } else {
         self.clickCounter = self.clickCounter + 1;
       }
-      ($.RL_oActivitySession as ActivityRecording.Session).addLap();
-      if(Attention has :playTone) {
-        Attention.playTone(Attention.TONE_LAP);
-      }
       return true;
     }
     return false;
