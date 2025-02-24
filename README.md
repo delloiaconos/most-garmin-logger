@@ -1,15 +1,11 @@
 # MOST Raw Logger (Garmin ConnectIQ) App
 
-
-This is a fork from:  [cedric-dufour/connectiq-app-rawlogger](https://github.com/cedric-dufour/connectiq-app-rawlogger)
-All the credits goes to the author.
-
 ## Overview
 
 "MOST Raw Logger" is a Garmin ConnectIQ application designed to log raw sensor data for development, troubleshooting, and research purposes. 
-This forked version has been adapted as part of the MOST Flagship-A "GiroE 2024" Project, with the default behavior set to log all available sensor fields automatically.
+This is a fork from:  [cedric-dufour/connectiq-app-rawlogger](https://github.com/cedric-dufour/connectiq-app-rawlogger),
+and it has been adapted as part of the MOST Flagship-A "GiroE 2024" Project, with the default behavior set to log all available sensor fields automatically.
 This app has been used during the event for research propose.
-
 
 ## Features
 
@@ -36,7 +32,10 @@ Please refer to the INSTALL and USAGE files.
 
 ## Contribution & License
 
-This fork of RawLogger is developed as part of the MOST Flagship-A "GiroE 2024" Project. 
+This fork of  [RawLogger](https://github.com/cedric-dufour/connectiq-app-rawlogger) and it has been developed as part of the MOST Flagship-A "GiroE 2024" Project. 
+All the credits goes to the author.
+The original Garmin App is also available on the Garmin App Store at [https://apps.garmin.com/en-US/apps/bd37beed-35e1-4ffc-a9fc-9297723d6c72](https://apps.garmin.com/en-US/apps/bd37beed-35e1-4ffc-a9fc-9297723d6c72).
+
 Contributions are welcome! 
 Follow standard pull request and issue-reporting guidelines on GitHub.
 
