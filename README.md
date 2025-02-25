@@ -46,3 +46,4 @@ Missione 4 "Istruzione e Ricerca"
 Componente 2 "dalla Ricerca all’Impresa" 
 Linea di Investimento 1.4 "Potenziamento Strutture di Ricerca e Creazione di Campioni Nazionali di R&S su alcune Key Enabling Technologies"
 D.D. 1033 17/06/2022, Codice Progetto CN00000023
+This work/code/repository reflects only the authors’ views and opinions, neither the European Union nor the European Commission can be considered responsible for them.
